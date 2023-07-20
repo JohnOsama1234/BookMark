@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark Task</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bookmark.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h3>Bookmarker</h3>
+        </div>
+    </header>
+    <div class="container">
+        <div class="well">
+            <div class="column">
+                <h2>Bookmark your favorite sites </h2>
+                <p>Site Name</p>
+                <input type="text" placeholder="Bookmark Name" id="siteName">
+                <p class="alert alert-error m-auto d-none text-center" id="nameError"></p>
+                <p>Site URL</p>
+                <input type="text" placeholder="website URL" id="siteUrl">
+                <p class="alert alert-error m-auto d-none " id="urlError"></p>
+                <div class="button m-auto">
+                    <button class="btn btn-primary" id="mainBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="bookmarkList" class="column">
+            <div class="webwell row  d-none" id="visitDelete">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+    <script src="./bookmark.js"></script>
+</body>
+
+</html>
